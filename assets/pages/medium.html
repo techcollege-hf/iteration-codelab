@@ -127,37 +127,106 @@
         <article>
             <h2>Opgave 3</h2>
             <p>
-                Den enest loop metode du må bruge i denne opgave er for...each loop!
+                Hent data fra dette API-endpoint: https://dummyjson.com/users<br>
+når du modtager data, så vis en liste over alle 30 brugere med: fornavn, efternavn og alder i elementet med id "opgave3"
+
+               <br> Den enest loop metode du må bruge i denne opgave er for...each loop!
+
             </p>
             <h3>Instruktioner</h3>
             <ol>
                 <li>
-                    do this
+                   brug fetch() til at hente data
                 </li>
                 <li>
-                    do this
+                    skriv en callback funktion der modtager det hentede data
                 </li>
                 <li>
-                    do this
+                    skriv en funktion der kan vise dit data
                 </li>
             </ol>
+
+            <div id="opgave3"></div>
 
             <br>
             <button class="hintbutton">Hint</button>
             <div class="hint">
 
                 <pre><code>
-                            .pop:hover{
-                                animation-name: popUp;
-                                animation-duration: 500ms;
-                                animation-fill-mode:both;
-                                animation-timing-function: ease;
-                              }
-                              
-                              @keyframes popUp {
-                                from {transform: scale(100%)}
-                                to {transform: scale(120%)}
-                              }
+
+                    /* kan du huske en simpel fetch
+                    uden error catching?*/
+                    getUsers();
+
+                    // fetch data
+                    function getUsers(){
+                        
+                        fetch('https://dummyjson.com/users')
+                    
+                    .then((res) =>{
+                       return res.json();
+                    })
+                    
+                    .then((res) => { 
+                    dataRecieved(res.users);
+                    })
+                    
+                    }
+                    
+                    
+                    // callback gør noget med det hentede data
+                    function dataRecieved(userData){
+                    console.log(userData);
+                    }
+            </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+    <section class="assignmentArea">
+        <header class="hard"></header>
+        <article>
+            <h2>Opgave 4</h2>
+            <p>
+                udvælg en bruger fra din data i opgave 3,<br>og vis alle keys med values i brugernes data objekt<br>
+                resultatet vises i elementet med id "opgave4"
+
+               <br> Brug loop metoden for...in <br><br>
+            
+               <h5>for...in loop:</h3>
+        <p>En løkketype, der bruges til at iterere over egenskaberne (nøglerne) i et objekt. Anvendes normalt til at
+            arbejde med
+            objekter, ikke arrays.</p>
+        <pre>
+            <code>
+    const person = {
+        name: "John",
+        age: 30,
+        profession: "Developer"
+    };
+    
+    for (const key in person) {
+    console.log(key + ": " + person[key]);
+    }
+            </code>
+          </pre>
+
+            <div id="opgave4"></div>
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+
+            for (const key in user) {
+
+                console.log( `${key}: ${user[key]}`);
+            }
+
             </code></pre>
             </div>
         </article>
