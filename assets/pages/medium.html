@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CSS keyframes medium</title>
+    <title>Iteration Codelab medium</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/main.css">
@@ -27,26 +27,107 @@
                 <a href="../../index.html">back</a>
             </nav>
             <br>
-            <p>easy.</p>
-            <br>
-
-            description
+            <h3>forEach metode:</h3>
+            <p>En metode til arrays, der giver en enkel måde at udføre en handling på hvert element i arrayet.
+                Bruges til at gennemgå hvert element i en array uden behov for at tælle indekser manuelt. Anvendes
+                typisk
+                til at udføre
+                en
+                funktion på hvert element i arrayet.</p>
+            <pre>
+                        <code>
+                    const numbers = [1, 2, 3, 4, 5];
+                    numbers.forEach(function (number) {
+                      console.log(number);
+                    });
+                        </code>
+                      </pre>
 
 
             <strong>
-
-                <p>CSS skal skrives i filen: /opgavefiler/css/easy.css </p>
+                <p>CSS skal skrives i filen: /opgavefiler/css/medium.css </p>
+                <p>JS skal skrives i filen: /opgavefiler/js/medium.js </p>
             </strong>
 
 
     </header>
     </section>
     <section class="assignmentArea">
-        <header class="medium"></header>
+        <header class="easy"></header>
         <article>
             <h2>Opgave 1</h2>
             <p>
+                Du skal bruge arrayet "numbers" til at udføre følgende funktioner, med for..each loop metoden.
+                udskriv dine resultater til konsollen.
+                hvis du kan DOM kode så vis resultater efter hinanden i elementet med id "opgave1"
+            </p>
 
+            <h3>Instruktioner</h3>
+
+            <ol>
+                <li>
+                    Udskriv alle tal i arrayet.
+                </li>
+                <li>
+                    Beregn summen af alle tal i arrayet.
+                </li>
+                <li>
+                    Find det største tal i arrayet.
+                </li>
+            </ol>
+
+            <div id="opgave1"></div>
+
+            <br>
+
+        </article>
+
+
+
+    </section>
+
+
+    <section class="assignmentArea">
+        <header class="medium"></header>
+        <article>
+            <h2>Opgave 2</h2>
+            <p>
+                Den enest loop metode du må bruge i denne opgave er for...each loop!
+            </p>
+            <h3>Instruktioner</h3>
+
+            <ol>
+                <li>
+                    brug hjælpefunktionen getData() til at hente data.
+                </li>
+                <li>
+                    udskriv name og shortDescription for hvert data objekt du har modtaget.
+                </li>
+                <li>
+                    hvis du kan DOM kode:<br>
+                    vis hvert dyr med navn og billede i elementet med id "opgave2".
+                </li>
+            </ol>
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+                <divid="opgave2">
+                    </divid>
+                    <pre><code>
+                          copy og paste fra galleri kode :)
+            </code></pre>
+            </div>
+        </article>
+    </section>
+
+
+    <section class="assignmentArea">
+        <header class="medium"></header>
+        <article>
+            <h2>Opgave 3</h2>
+            <p>
+                Den enest loop metode du må bruge i denne opgave er for...each loop!
             </p>
             <h3>Instruktioner</h3>
             <ol>
@@ -61,27 +142,23 @@
                 </li>
             </ol>
 
-
-
-
-
             <br>
             <button class="hintbutton">Hint</button>
             <div class="hint">
 
                 <pre><code>
-                        .pop:hover{
-                            animation-name: popUp;
-                            animation-duration: 500ms;
-                            animation-fill-mode:both;
-                            animation-timing-function: ease;
-                          }
-                          
-                          @keyframes popUp {
-                            from {transform: scale(100%)}
-                            to {transform: scale(120%)}
-                          }
-        </code></pre>
+                            .pop:hover{
+                                animation-name: popUp;
+                                animation-duration: 500ms;
+                                animation-fill-mode:both;
+                                animation-timing-function: ease;
+                              }
+                              
+                              @keyframes popUp {
+                                from {transform: scale(100%)}
+                                to {transform: scale(120%)}
+                              }
+            </code></pre>
             </div>
         </article>
 

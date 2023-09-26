@@ -33,7 +33,17 @@ pre {
   margin-bottom: 2em;
   margin-top: 2em;
   padding-bottom: 1em;
-  border-bottom: 1px solid black;
+  width: 70%;
+  /*   border-bottom: 1px solid black;
+ */
+}
+
+.mainDescription pre {
+  background-color: rgb(112, 112, 113);
+  color: aliceblue;
+  overflow-x: auto;
+  tab-size: 1;
+  border-radius: 0.5rem;
 }
 
 .mainDescription ul {
