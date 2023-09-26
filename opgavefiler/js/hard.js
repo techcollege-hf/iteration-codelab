@@ -6,12 +6,7 @@ console.group("opgave 1");
 
 
 
-// util functions 
 
-function validateEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regulært udtryk til validering af e-mail
-    return emailRegex.test(email); // Returnerer true, hvis e-mail er gyldig, ellers false
-}
 
 console.groupEnd();
 
